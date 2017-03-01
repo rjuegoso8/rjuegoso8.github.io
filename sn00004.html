@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<div>
+<div id="emulator">
+<span style="color: #990000;"><b>(ESPAÑOL) Para jugar Chrono Trigger ESPAÑOL (SNES) (SUPER NINTENDO),</b></span><br />
+<span style="color: #990000;"><b>por favor, descarga la última versión de Flash! </b></span><br />
+<span style="color: blue;"><b>(ENGLISH) To play Chrono Trigger ESPAÑOL (SNES) (SUPER NINTENDO), please,</b></span><br />
+<span style="color: blue;"><b>download the latest Flash player! </b></span><br />
+<br />
+
+<a href="http://www.adobe.com/go/getflashplayer">
+            <img alt="Get Adobe Flash player - Descargar Flash Player" src="//www.adobe.com/images/shared/download_buttons/get_adobe_flash_player.png" />
+        </a>
+        </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+<script type="text/javascript">
+
+    var resizeOwnEmulator = function(width, height)
+    {
+        var emulator = $('#emulator');
+        emulator.css('width', width);
+        emulator.css('height', height);
+    }
+
+    $(function()
+    {
+        function embed()
+        {
+            var emulator = $('#emulator');
+            if(emulator)
+            {
+                var flashvars = 
+                {
+                    system : 'snes',
+                    url : '/roms/sn00004.zip'
+                };
+                var params = {};
+                var attributes = {};
+
+                params.allowscriptaccess = 'sameDomain';
+                params.allowFullScreen = 'true';
+                params.allowFullScreenInteractive = 'true';
+
+                swfobject.embedSWF('flash/Nesbox.swf', 'emulator', '640', '480', '11.2.0', 'flash/expressInstall.swf', flashvars, params, attributes);
+            }
+        }
+
+        embed();
+    });
+
+</script>
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- retro juegos online ADAPTABLE -->
+<br />
+<ins class="adsbygoogle" data-ad-client="ca-pub-2700043112636633" data-ad-format="auto" data-ad-slot="3667716545" style="display: block;"></ins><script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+
+</html>
