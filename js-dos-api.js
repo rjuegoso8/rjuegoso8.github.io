@@ -250,12 +250,12 @@ function(a,b){jQuery.fn[b]=function(d){return d?this.bind(b,d):this.trigger(b)}}
       this.overlay = $('<div class="dosbox-overlay">');
       this.loaderMessage = $('<div class="dosbox-loader-message">');
       this.loader = $('<div class="dosbox-loader">').append($('<div class="st-loader">').append($('<span class="equal">'))).append(this.loaderMessage);
-      this.start = $('<div class="dosbox-start">Click to start');
+      this.start = $('<div class="dosbox-start">Click para JUGAR - Click to PLAY');
       this.div.append(this.wrapper);
       this.wrapper.append(this.canvas);
       this.wrapper.append(this.loader);
       this.wrapper.append(this.overlay);
-      this.overlay.append($('<div class="dosbox-powered">Powered by &nbsp;').append($('<a href="http://retrojuegosonline.blogspot.com">Retro Juegos Online')));
+      this.overlay.append($('<div class="dosbox-powered">Powered by &nbsp;').append($('<a href="http://retrojuegosonline.blogspot.com">RetroJuegosOnline')));
       this.overlay.append(this.start);
     }
 
