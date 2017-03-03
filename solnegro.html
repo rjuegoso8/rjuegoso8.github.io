@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>js-dos api</title>
+<style type="text/css">
+ .dosbox-container { width: 630px; height: 390px; }
+ </style>
+</head>
+<body>
+<div id="dosbox"></div>
+<br/>
+<button onclick="dosbox.requestFullScreen();">Pantalla completa - Make fullscreen</button>
+
+<script type="text/javascript" src="https://rjuegoso8.github.io/js-dos-api.js"></script>
+<script type="text/javascript">
+var dosbox = new Dosbox({
+id: "dosbox",
+onload: function (dosbox) {
+dosbox.run("https://rjuegoso8.github.io/solnegro.zip", "./SOL.EXE");
+},
+onrun: function (dosbox, app) {
+console.log("App '" + app + "' is runned");
+}
+});
+</script>
+</script>
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- retro juegos online ADAPTABLE -->
+<br />
+<ins class="adsbygoogle" data-ad-client="ca-pub-2700043112636633" data-ad-format="auto" data-ad-slot="3667716545" style="display: block;"></ins><script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+</html>
